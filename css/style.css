@@ -7,9 +7,9 @@ body{
 }
 
 #bloc-page {
-     margin: 0;
-      background-image: url('../img/nature.jpg');
-      background-size: cover;
+    margin: 0;
+    background-image: url('../img/nature.jpg');
+    background-size: cover;
 }
 
 header{
@@ -52,7 +52,7 @@ header button a:hover{
 
 section {
      /* hauteur compléte de la surface visible du navigateur */
-     height: 100vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;

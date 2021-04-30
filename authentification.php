@@ -15,7 +15,7 @@
         <header>
             <h1>Authentification</h1>
             <button>
-                <a href="#">S'inscrire</a>
+                <a href="inscription.php">S'inscrire</a>
             </button>
         </header>
         <section>

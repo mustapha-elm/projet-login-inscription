@@ -1,5 +1,9 @@
 <?php
-
+    session_start();
+    if($_SESSION['authentifier']!='oui'){
+        header('location:authentification.php');
+        exit();
+    }
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -15,11 +19,18 @@
         <header>
             <h1>Espace privé</h1>
             <button>
-                <a href="#">Quitter la session</a>
+                <a href="authentification.php">Quitter la session</a>
             </button>
         </header>
         <section>
-            <h1>Bonjour Nom Prénom</h1>
+            <h1>
+                <span>
+                    <?php 
+                    echo (date('H')<18)?('Bonjour'):('Bonsoir');
+                    ?>
+                </span>
+                    <?php echo $_SESSION['prenom']. ' ' .$_SESSION['nom']; ?>
+            </h1>
         </section>
     </div>
 </body>

@@ -2,8 +2,11 @@
     Created on : 30 avr. 2021, 03:57:09
     Author     : mustapha
 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 body{
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 #bloc-page {
